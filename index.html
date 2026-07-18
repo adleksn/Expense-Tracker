@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+
+      <aside class="sidebar">
+
+        <div class="side__total-header">
+          <div class="side__total-icon">
+            <span aria-hidden="true">P</span>
+            <span class="visually-hidden">рубль</span>
+          </div>
+          <h1 class="side__total-title">Expense Tracker</h1>
+        </div>
+        <nav class="side__menu">
+          <ul class="side__list">
+            <li class="side__item side__item--active">
+              <a href="#" class="side__link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                </svg>
+                Обзор
+              </a>
+            </li>
+            <li class="side__item">
+              <a href="#" class="side__link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path
+                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+                Операции
+              </a>
+            </li>
+            <li class="side__item">
+              <a href="#" class="side__link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path
+                    d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                  ></path>
+                </svg>
+                Категории
+              </a>
+            </li>
+            <li class="side__item">
+              <a href="#" class="side__link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+                Статистика
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+      </aside>
+
+      <main class="main">
+
+        <section class="page__review">
+
+          <div class="header__review">
+            <h2 class="title__review">Обзор</h2>
+            <p class="text__review">Следите за своими расходами и доходами</p>
+          </div>
+
+          <div class="balance-cards">
+            <div class="total-balance__review">
+              <h3 class="balance__title">Общий баланс</h3>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="6" x2="12" y2="12"></line>
+                <line x1="12" y1="12" x2="16" y2="14"></line>
+              </svg>
+              <p class="balance-amount__text balance">0 P</p>
+            </div>
+
+            <div class="total-balance__review">
+              <h3 class="balance__title">Доходы</h3>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              <p class="balance-amount__text income">0 P</p>
+            </div>
+
+            <div class="total-balance__review">
+              <h3 class="balance__title">Расходы</h3>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                <polyline points="17 18 23 18 23 12"></polyline>
+              </svg>
+              <p class="balance-amount__text expenses">0 P</p>
+            </div>
+          </div>
+
+          <div class="add-operation">
+            <h3 class="add-operation__title">Добавить операцию</h3>
+            <div class="operation__conteiner">
+              <div class="operation__row">
+                <div class="operation__item">
+                  <label class="operation__item--title" for="name"
+                    >Название</label
+                  >
+                  <input class="operation__input" type="text" id="name" />
+                </div>
+                <div class="operation__item">
+                  <label class="operation__item--title" for="number"
+                    >Сумма</label
+                  >
+                  <input class="operation__input" type="number" id="amount" />
+                </div>
+                <div class="operation__item">
+                  <label class="operation__item--title" for="category"
+                    >Категория</label
+                  >
+                  <select class="operation__input" id="category">
+                    <option value="" disabled selected>
+                      Выберете категорию
+                    </option>
+                    <optgroup label="Еда">
+                      <option value="products">Продукты</option>
+                      <option value="cafe">Кафе и рестораны</option>
+                    </optgroup>
+                    <optgroup label="Транспорт">
+                      <option value="transport">Транспорт</option>
+                      <option value="fuel">Топливо</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="operation__row">
+                <div class="operation__item">
+                  <p class="operation__item--title">Тип операции</p>
+                  <div class="operation__radio-group">
+                    <label class="operation__radio">
+                      <input type="radio" id="income" name="operation-type" value="income" checked/>
+                      <span class="operation__radio-custom"></span>
+                      Доход
+                    </label>
+                    <label class="operation__radio">
+                      <input type="radio" id="expense" name="operation-type" value="expense"/>
+                      <span class="operation__radio-custom"></span>
+                      Расход
+                    </label>
+                  </div>
+                </div>
+                <div class="operation__item">
+                  <label class="operation__item--title" for="date">Дата</label>
+                  <input class="operation__input" type="date" id="date" value="2026-06-09"/>
+                </div>
+              </div>
+              <form class="operation__form-button" action="">
+                <button class="operation__button" id="add-button" type="button">
+                  Добавить запись
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="operations-table">
+            <div class="operations-table__header">
+              <h3 class="operations-table__title">История операций</h3>
+              <div class="operations-table__filters">
+                <select class="operation__input filter-select" id="filter-type">
+                  <option value="all">Все операции</option>
+                  <option value="income">Доходы</option>
+                  <option value="expense">Расходы</option>
+                </select>
+                <select class="operation__input filter-select" id="filter-category">
+                  <option value="all">Все категории</option>
+                  <option value="products">Продукты</option>
+                  <option value="cafe">Кафе и рестораны</option>
+                  <option value="transport">Транспорт</option>
+                  <option value="fuel">Топливо</option>
+                </select>
+                <input class="operation__input filter-date" type="date" id="filter-date" />
+              </div>
+            </div>
+            <div class="operations-table__wrapper">
+              <table class="operations-table__table">
+                <thead>
+                  <tr>
+                    <th>Название</th>
+                    <th>Категория</th>
+                    <th>Сумма</th>
+                    <th>Тип</th>
+                    <th>Дата</th>
+                    <th>Действия</th>
+                  </tr>
+                </thead>
+                <tbody id="operations-tbody">
+                  <tr>
+                  </tr>
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path
+                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                          ></path>
+                        </svg>
+                      </button>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
